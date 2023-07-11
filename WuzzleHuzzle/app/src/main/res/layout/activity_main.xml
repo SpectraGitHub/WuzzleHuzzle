@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightblue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WUZZLE HUZZLE"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/profile_picture" />
+
+
+    <ImageView
+        android:id="@+id/norwegian_flag"
+        android:layout_marginTop="16sp"
+        android:layout_width="160sp"
+        android:layout_height="100sp"
+        android:layout_marginLeft="30sp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/norwegian" />
+
+    <TextView
+        android:id="@+id/norwegian_text"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="Norwegian"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/norwegian_flag"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/english_flag"
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:layout_marginEnd="32sp"
+        android:layout_marginTop="16sp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:srcCompat="@drawable/english" />
+
+    <TextView
+        android:id="@+id/english_text"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="English"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/english_flag"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
